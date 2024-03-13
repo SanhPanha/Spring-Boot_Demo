@@ -62,7 +62,7 @@
     <h2>Add Product</h2>
     <form th:action="@{/products/add}" th:object="${product}" method="post">
         <label>Name : <input type="text" th:field="*{name}" required></label><br>
-        <label>Price: <input type="number" th:field="*{price}" required></label><br>
+        <label>Price: <input type="number" th:field="*{price}" ></label><br>
 
         <button type="submit">Add Product</button>
         <button>
